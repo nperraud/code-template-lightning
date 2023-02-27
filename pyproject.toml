@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "package_name"
+version = "0.1.0"
+readme = "README.rst"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<4.0"
+tqdm = "*"
+scikit-learn = "*"
+scikit-image = "*"
+numpy = "*"
+matplotlib = "*"
+python-dotenv = "*"
+setuptools = "*"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+jupyterlab = "*"
+twine = "*"
+setuptools = "*"
+wheel = "*"
+hyperspy-gui-ipywidgets = "*"
+hyperspy-gui-traitsui = "*"
+pysptools = "*"
+flake8 = "*"
+pylint = "*"
+sphinx = "*"
+numpydoc = "*"
+sphinxcontrib-bibtex = "*"
+sphinx-gallery = "*"
+memory_profiler = "*"
+sphinx-rtd-theme = "*"
+sphinx-copybutton = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+

@@ -1,0 +1,14 @@
+global-include *.md
+global-include *.txt
+global-include *.py
+global-include *.yaml
+global-include *.yml
+global-include . *.rst
+recursive-include notebooks *.ipynb
+recursive-include doc *.css
+include doc/reference.bib
+recursive-include espm/tables *.json
+recursive-include espm/tables *.txt
+recursive-include espm/ *.yaml
+recursive-include experiments/ *.py
+recursive-include espm/datasets/toy-problem/ *.png
