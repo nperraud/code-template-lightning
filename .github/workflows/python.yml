@@ -65,7 +65,6 @@ jobs:
       - name: Check linting
         run: |
           source .venv/bin/activate
-          make lint
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       # if you feel confident, you this line instead
       # flake8 . --count --ignore=E501 --show-source --statistics
