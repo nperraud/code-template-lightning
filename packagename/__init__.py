@@ -1,5 +1,6 @@
-import package_name as pkg
-from package_name.conf import logger
+__version__ = "0.1.0"
+
+from packagename.conf import logger
 
 def print_version():
     """Print the version of the package.
@@ -12,4 +13,4 @@ def print_version():
         This function does not return anything.
         
     """
-    logger.info(pkg.__version__)
+    logger.info(__version__)

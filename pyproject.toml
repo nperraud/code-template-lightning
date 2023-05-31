@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "package_name"
+name = "packagename"
 version = "0.1.0"
 readme = "README.rst"
 description = ""
@@ -15,6 +15,10 @@ numpy = "*"
 matplotlib = "*"
 python-dotenv = "*"
 setuptools = "*"
+wandb = "*"
+torch = "*"
+torchvision = "*"
+pytorch-lightning = "*"
 
 
 [tool.poetry.dev-dependencies]
@@ -35,6 +39,9 @@ sphinx-gallery = "*"
 memory_profiler = "*"
 sphinx-rtd-theme = "*"
 sphinx-copybutton = "*"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^6.5.4"
 
 [build-system]
 requires = ["poetry-core"]

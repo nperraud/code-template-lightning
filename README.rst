@@ -1,5 +1,10 @@
-package_name: Template for Python packages with pytorch lightning
+packagename: Template for Python packages with pytorch lightning
 =================================================================
+
+**The first thing you need to do is to replace `packagename` in all files with the name of your package.
+Then rename the folder `packagename` to the name of your package.**
+
+Once this is done, you can proceed with the instatllation of the package as described below.
 
 
 Getting started
@@ -40,7 +45,7 @@ To run tests, use the following command:
 
     pytest .
 
-The tests code are located in the folder package_name/tests.
+The tests code are located in the folder packagename/tests.
 
 
 Documentation

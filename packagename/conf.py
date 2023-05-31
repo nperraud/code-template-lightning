@@ -52,7 +52,7 @@ PATH_ROOT = Path(__file__).parents[1]
 
 DATASETDIR = LazyEnv(
     "DATASET_DIR",
-    PATH_ROOT / Path("data/sim_data"),
+    PATH_ROOT / Path("datasets"),
     return_type=Path,
 ).eval()
 

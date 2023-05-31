@@ -1,4 +1,4 @@
-from package_name.module import print_version
+from packagename.module import print_version
 
 def test_print_version():
     """Test the print_version function.

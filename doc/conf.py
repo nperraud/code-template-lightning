@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import PACKAGE_NAME
+import packagename
 
 extensions = [
     'sphinx.ext.viewcode',
@@ -52,9 +52,9 @@ exclude_patterns = ['_build']
 source_suffix = '.rst'
 master_doc = 'index'
 
-project = 'PACKAGE_NAME'
-version = PACKAGE_NAME.__version__
-release = PACKAGE_NAME.__version__
+project = 'packagename'
+version = packagename.__version__
+release = packagename.__version__
 copyright = 'Nathanael Perraudin'
 
 pygments_style = 'sphinx'
@@ -67,6 +67,6 @@ latex_elements = {
     'pointsize': '10pt',
 }
 latex_documents = [
-    ('index', 'PACKAGE_NAME.tex', 'PACKAGE_NAME documentation',
+    ('index', 'packagename.tex', 'packagename documentation',
      'Nathanael Perraudin', 'manual'),
 ]
