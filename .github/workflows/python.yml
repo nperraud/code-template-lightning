@@ -72,7 +72,7 @@ jobs:
       #----------------------------------------------
       #              run doc
       #----------------------------------------------
-      - name: Check D0c
+      - name: Check Doc
         run: |
           source .venv/bin/activate
           make doc
