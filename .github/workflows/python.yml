@@ -72,6 +72,9 @@ jobs:
       #----------------------------------------------
       #              run doc
       #----------------------------------------------
+      - name: Install Pandoc
+        run: |
+          sudo apt-get install pandoc
       - name: Check Doc
         run: |
           source .venv/bin/activate
