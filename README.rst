@@ -47,11 +47,37 @@ To run tests, use the following command:
 
 The tests code are located in the folder packagename/tests.
 
+Tests
+-----
+
+The tests are located in the folder packagename/tests. The tests are run using pytest. To run the tests, use the following command:
+
+```bash
+pytest packagename
+```
+or
+```bash
+make test
+```
+
 
 Documentation
 -------------
 
-Check the sphynx documentation in the folder doc.
+Check the sphynx documentation in the folder doc. Update the documentation accordingly.
+
+You can compile the doc using the following command:
+
+```bash
+make doc
+```
+
+Package information
+-------------------
+
+The package information is stored in the file pyproject.toml. Update the information accordingly.
+
+
 
 TODOs
 -----
