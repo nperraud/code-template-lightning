@@ -1,5 +1,5 @@
-package_name: Template for Python packages
-==========================================
+package_name: Template for Python packages with pytorch lightning
+=================================================================
 
 
 Getting started
