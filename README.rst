@@ -72,6 +72,24 @@ You can compile the doc using the following command:
 make doc
 ```
 
+Style and linting
+-----------------
+
+The code is linted using flake8. To run the linter, use the following command:
+
+```bash
+flake8 --doctests --exclude=doc --ignore=E501
+```
+or
+```bash
+make lint
+```
+
+To help you to get the right format, you can use `black`:
+```bash
+black packagename
+```
+
 Package information
 -------------------
 

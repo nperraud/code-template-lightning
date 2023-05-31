@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 # Set up the default logger
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    handlers=[logging.StreamHandler()])
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.StreamHandler()],
+)
 
 # Create the logger object
 logger = logging.getLogger("Default Logger")
@@ -46,6 +47,7 @@ class LazyEnv:
 
         return value
 
+
 # path processed dataset
 PATH_ROOT = Path(__file__).parents[1]
 
@@ -61,5 +63,3 @@ OUTPUTDIR = LazyEnv(
     PATH_ROOT / Path("outputs"),
     return_type=Path,
 ).eval()
-
-

@@ -18,7 +18,7 @@ setuptools = "*"
 wandb = "*"
 torch = "*"
 torchvision = "*"
-pytorch-lightning = "*"
+pytorch-lightning = ">=2.0.0"
 
 
 [tool.poetry.dev-dependencies]
@@ -32,13 +32,16 @@ hyperspy-gui-traitsui = "*"
 pysptools = "*"
 flake8 = "*"
 pylint = "*"
-sphinx = "*"
+sphinx = "<7.0.0"
 numpydoc = "*"
 sphinxcontrib-bibtex = "*"
 sphinx-gallery = "*"
 memory_profiler = "*"
 sphinx-rtd-theme = "*"
 sphinx-copybutton = "*"
+nbsphinx = "*"
+pandoc = "*"
+black = "*"
 
 [tool.poetry.group.dev.dependencies]
 notebook = "^6.5.4"

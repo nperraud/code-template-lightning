@@ -1,14 +1,16 @@
 from torchvision.datasets import MNIST
 from packagename.conf import DATASETDIR
-from torchvision import datasets, transforms
-from torch.utils.data import TensorDataset, DataLoader, random_split
+from torchvision import transforms
+from torch.utils.data import random_split
+
 
 def load_mnist():
-    """ Load the MNIST dataset."""
+    """Load the MNIST dataset."""
 
     # transforms for images
-    transform=transforms.Compose([transforms.ToTensor(), 
-                                transforms.Normalize((0.1307,), (0.3081,))])
+    transform = transforms.Compose(
+        [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))]
+    )
     mnist_train = MNIST(DATASETDIR, train=True, download=True, transform=transform)
     assert len(mnist_train) == 60000
     mnist_train, mnist_val = random_split(mnist_train, [55000, 5000])

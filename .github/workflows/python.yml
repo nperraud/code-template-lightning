@@ -57,4 +57,12 @@ jobs:
       - name: Run tests
         run: |
           source .venv/bin/activate
-          pytest .
+          make test
+
+      #----------------------------------------------
+      #              run test suite
+      #----------------------------------------------
+      - name: Check linting
+        run: |
+          source .venv/bin/activate
+          make lint

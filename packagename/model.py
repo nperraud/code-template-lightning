@@ -1,10 +1,12 @@
 from torch import nn
 
+
 class MLP(nn.Module):
     """Multi-layer perceptron model.
 
-    It uses leaky ReLU as activation function and the last layer is a linear layer.
-    
+    It uses leaky ReLU as activation function and the last layer is a
+    linear layer.
+
     Parameters
     ----------
     input_dim : int
@@ -18,7 +20,15 @@ class MLP(nn.Module):
     use_softmax : bool
         Whether to use softmax as the activation function of the last layer.
     """
-    def __init__(self, input_dim: int, hidden_dim: int, output_dim: int, n_layers: int=3, use_softmax: bool=False):
+
+    def __init__(
+        self,
+        input_dim: int,
+        hidden_dim: int,
+        output_dim: int,
+        n_layers: int = 3,
+        use_softmax: bool = False,
+    ):
         super().__init__()
         self.input_dim = input_dim
         self.hidden_dim = hidden_dim
@@ -31,7 +41,7 @@ class MLP(nn.Module):
         for _ in range(n_layers - 1):
             self.layers.append(nn.Linear(hidden_dim, hidden_dim))
         self.layers.append(nn.Linear(hidden_dim, output_dim))
-    
+
     def forward(self, x):
         x = x.view(-1, self.input_dim)
         for layer in self.layers[:-1]:

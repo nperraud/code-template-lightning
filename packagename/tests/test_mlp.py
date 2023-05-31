@@ -1,14 +1,14 @@
 import torch
 from packagename.model import MLP
 
-def test_mlp():
 
+def test_mlp():
     batch_size = 64
 
     hidden_dim = 256
     num_classes = 10
     n_layers = 3
-    input_dim = 28*28
+    input_dim = 28 * 28
 
     net = MLP(input_dim, hidden_dim, num_classes, n_layers, use_softmax=True)
 
