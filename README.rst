@@ -15,7 +15,7 @@ To get started, make sure you have the necessary permissions and clone the repos
 .. code-block:: bash
 
    git clone 
-   cd leap
+   cd code-template-lightning
 
 Working with Poetry
 ====================
