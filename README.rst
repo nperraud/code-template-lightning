@@ -52,13 +52,16 @@ Tests
 
 The tests are located in the folder packagename/tests. The tests are run using pytest. To run the tests, use the following command:
 
-```bash
-pytest packagename
-```
+.. code-block:: bash
+
+   pytest packagename
+
 or
-```bash
-make test
-```
+
+.. code-block:: bash
+   
+   make test
+
 
 
 Documentation
@@ -68,27 +71,32 @@ Check the sphynx documentation in the folder doc. Update the documentation accor
 
 You can compile the doc using the following command:
 
-```bash
-make doc
-```
+.. code-block:: bash
+
+   make doc
+
+
 
 Style and linting
 -----------------
 
 The code is linted using flake8. To run the linter, use the following command:
 
-```bash
-flake8 --doctests --exclude=doc --ignore=E501
-```
+.. code-block:: bash
+
+   flake8 --doctests --exclude=doc --ignore=E501
+
 or
-```bash
-make lint
-```
+.. code-block:: bash
+   
+   make lint
+
 
 To help you to get the right format, you can use `black`:
-```bash
-black packagename
-```
+
+.. code-block:: bash
+
+   black packagename
 
 Package information
 -------------------
