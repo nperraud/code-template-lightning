@@ -55,7 +55,6 @@ or
    make test
 
 
-
 Documentation
 -------------
 
@@ -79,6 +78,7 @@ The code is linted using flake8. To run the linter, use the following command:
    flake8 --doctests --exclude=doc --ignore=E501
 
 or
+
 .. code-block:: bash
    
    make lint
