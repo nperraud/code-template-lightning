@@ -39,14 +39,6 @@ To add an additional package to the project, use the add command. For example:
 
    poetry add numpy
 
-To run tests, use the following command:
-
-.. code-block:: bash
-
-    pytest .
-
-The tests code are located in the folder packagename/tests.
-
 Tests
 -----
 
